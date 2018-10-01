@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         print("set text button pressed");
         print("outputTextLabel set to = textField\n");
         
+        outputTextLabel.isHidden = false;
         outputTextLabel.text = textField.text;
         
     }
@@ -27,7 +28,8 @@ class ViewController: UIViewController {
         print("outputTextLabel reset\n");
         
         
-        outputTextLabel.text = "Enter Something in the Text Field!";
+        outputTextLabel.text = "";
+
         
     }
     
@@ -40,6 +42,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        outputTextLabel.isHidden = true;
     }
 
     override func didReceiveMemoryWarning() {
